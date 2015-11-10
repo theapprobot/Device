@@ -18,6 +18,15 @@ if(mydevice.is('bot'))
 	// do something...
 else
 	// do another thing...
+
+// Custom bot regex
+var customBot = device('put here user-agent string', {
+    botRegex: /Custom bot regex/
+});
+if (mydevice.is("bot")) {
+// ...
+}
+
 ```
 By doing this you're getting an object that have the following properties:
 <table>
